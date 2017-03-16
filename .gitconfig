@@ -32,5 +32,5 @@
 	ga = add
 	gco = git checkout
 	gpu = git pull --rebase upstream
-	gci = git commit -a
+	gc = git commit -a
 	gpo = git pull origin master
