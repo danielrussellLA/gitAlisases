@@ -1,0 +1,36 @@
+[user]
+	name = GIT_USER_NAME
+	email = GIT_EMAIL
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[core]
+	autocrlf = input
+	safecrlf = true
+[alias]
+	g = git
+  	co = checkout
+  	ci = commit
+	st = status
+  	br = branch
+  	hist = log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+  	type = cat-file -t
+  	dump = cat-file -p
+	cl = clone
+	gst = git status
+	gfetch = fetch
+	gremote = remote
+	greflog = git reflog -g
+	greset = git reset --hard
+	gstash = git stash
+	gapply = git stash apply
+	ga = add
+	gco = git checkout
+	gpu = git pull --rebase upstream
+	gci = git commit -a
+	gpo = git pull origin master
