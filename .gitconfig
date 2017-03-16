@@ -23,12 +23,6 @@
   	dump = cat-file -p
 	cl = clone
 	gst = git status
-	gfetch = fetch
-	gremote = remote
-	greflog = git reflog -g
-	greset = git reset --hard
-	gstash = git stash
-	gapply = git stash apply
 	ga = add
 	gco = git checkout
 	gpu = git pull --rebase upstream
